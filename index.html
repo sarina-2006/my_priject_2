@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="داشبورد فروشگاهی حرفه‌ای با HTML و CSS" />
+  <title>فروشگاه‌یار | داشبورد مدیریتی</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">F</div>
+        <div>
+          <h1>فروشگاه‌یار</h1>
+          <p>Dashboard Admin</p>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <a class="active" href="#">داشبورد</a>
+        <a href="#">سفارش‌ها</a>
+        <a href="#">محصولات</a>
+        <a href="#">مشتریان</a>
+        <a href="#">گزارش‌ها</a>
+      </nav>
+
+      <div class="sidebar-card">
+        <span>وضعیت امروز</span>
+        <strong>+18% فروش</strong>
+        <p>نسبت به روز گذشته</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h2>داشبورد فروشگاهی</h2>
+          <p>نمای کلی فروش، سفارش‌ها و عملکرد محصولات</p>
+        </div>
+        <div class="topbar-actions">
+          <button class="ghost-btn">دانلود گزارش</button>
+          <button class="primary-btn">افزودن محصول</button>
+        </div>
+      </header>
+
+      <section class="stats">
+        <article class="stat-card">
+          <span>فروش امروز</span>
+          <strong>32,450,000</strong>
+          <small>تومان</small>
+        </article>
+        <article class="stat-card">
+          <span>سفارش‌ها</span>
+          <strong>128</strong>
+          <small>12 مورد جدید</small>
+        </article>
+        <article class="stat-card">
+          <span>مشتریان فعال</span>
+          <strong>1,842</strong>
+          <small>در 30 روز اخیر</small>
+        </article>
+        <article class="stat-card">
+          <span>نرخ تبدیل</span>
+          <strong>4.8%</strong>
+          <small>+0.6%</small>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel chart-panel">
+          <div class="panel-head">
+            <h3>روند فروش هفتگی</h3>
+            <span>Last 7 days</span>
+          </div>
+          <div class="chart">
+            <div class="bar" style="height: 42%"></div>
+            <div class="bar" style="height: 68%"></div>
+            <div class="bar" style="height: 54%"></div>
+            <div class="bar" style="height: 82%"></div>
+            <div class="bar" style="height: 60%"></div>
+            <div class="bar" style="height: 88%"></div>
+            <div class="bar" style="height: 72%"></div>
+          </div>
+        </article>
+
+        <article class="panel order-panel">
+          <div class="panel-head">
+            <h3>آخرین سفارش‌ها</h3>
+            <span>Live updates</span>
+          </div>
+          <div class="order-list">
+            <div class="order-row">
+              <div>
+                <strong>سفارش #1042</strong>
+                <p>یک ساعت پیش</p>
+              </div>
+              <span class="badge success">تکمیل شد</span>
+            </div>
+            <div class="order-row">
+              <div>
+                <strong>سفارش #1041</strong>
+                <p>3 ساعت پیش</p>
+              </div>
+              <span class="badge warning">در انتظار</span>
+            </div>
+            <div class="order-row">
+              <div>
+                <strong>سفارش #1040</strong>
+                <p>5 ساعت پیش</p>
+              </div>
+              <span class="badge info">ارسال شد</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel table-panel">
+        <div class="panel-head">
+          <h3>محصولات پرفروش</h3>
+          <span>Top products</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>نام محصول</th>
+                <th>دسته</th>
+                <th>قیمت</th>
+                <th>وضعیت</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>عطر Noir Élise</td>
+                <td>لوکس</td>
+                <td>2,400,000</td>
+                <td><span class="badge success">موجود</span></td>
+              </tr>
+              <tr>
+                <td>ساعت Classic Line</td>
+                <td>اکسسوری</td>
+                <td>5,800,000</td>
+                <td><span class="badge warning">کم موجود</span></td>
+              </tr>
+              <tr>
+                <td>کیف Urban Pro</td>
+                <td>مد و فشن</td>
+                <td>3,150,000</td>
+                <td><span class="badge info">فعال</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
